@@ -1,0 +1,30 @@
+body {
+  min-height: 93.3vh;
+}
+
+.center-box {
+  margin: 50px auto 10px auto;
+  height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   RESULT SCREEN
+========================= */
+.result-box {
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.result-title {
+  color: #2e8b57;
+}
+
+.result-text {
+  font-size: 18px;
+}

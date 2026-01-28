@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Final Result</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/finalResult.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gabriela&display=swap" rel="stylesheet">
+  <script src="js/nav.js" defer></script>
+  <script src="js/finalResult.js"></script>
+</head>
+
+<body class="result-page">
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="nav-left">Alina Skultecka</div>
+          <ul class="menu-list">
+            <li><a href="/CV/index.html">CV page</a></li>
+            <li><a href="/QuizGame/index.html">Quiz home</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  <div class="center-box">
+    <h1 id="quiz-title" class="title"></h1>
+          <!-- Mobile menu button -->
+        <div class="mobile-menu">
+        <button class="menu-btn" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </button>
+
+        <ul class="mobile-menu-list">
+          <li><a href="/CV/index.html">CV page</a></li>
+          <li><a href="/QuizGame/index.html">Quiz home</a></li>
+        </ul>
+      </div>
+
+    <div class="result-box">
+      <h2 class="result-title">Quiz finished!</h2>
+      <p class="result-text">
+        You got <strong id="correct-count"></strong> out of
+        <strong id="total-count"></strong> correct.
+      </p> 
+    </div>
+    
+    <footer class="site-footer">
+    Created by Alina Skultecka 2026
+    </footer>
+
+    </div>
+</body>
+</html>

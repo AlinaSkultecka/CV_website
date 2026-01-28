@@ -1,0 +1,89 @@
+/* =========================
+   QUIZ PAGE
+========================= */
+body {
+  min-height: 90vh;
+}
+
+.center-box {
+  margin: 70px auto 0px auto;
+}
+
+
+/* =========================
+   ANSWER GRID
+========================= */
+.answers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  justify-content: center;
+  gap: 20px;
+}
+
+.answer-box {
+  height: 100px;
+  background: #f0f0f0;
+  border-radius: 14px;
+  padding: 20px;
+  border: 2px solid transparent;  /* the answer box does not shake */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.answer-box:hover {
+  background: #f9a7db;
+  border: 2px solid #e46ab3;
+  
+}
+
+/* Disabled */
+.answer-box.disabled {
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* Correct / Wrong */
+.answer-box.correct {
+  background: #b6f2c2;
+  border: 2px solid #2e8b57;
+}
+
+.answer-box.wrong {
+  background: #f6b3b3;
+  border: 2px solid #c0392b;
+}
+
+
+
+
+/* =========================
+   QUIZ RESPONSIVE
+========================= */
+@media (max-width: 720px) {
+    
+   .center-box {
+   margin: 13px auto 13px auto;
+   }
+    .title {
+    margin-top: 10px;
+    }
+
+    .answers-grid {
+    grid-template-columns: 1fr;
+    max-width: 250px;
+    margin: 0 auto;
+    }
+
+    .answer-box {
+    justify-content: center;
+    padding: 0px;
+    }
+
+}

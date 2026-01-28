@@ -1,0 +1,190 @@
+/* =========================
+   GLOBAL / BODY
+========================= */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("../imagesQuizGame/background_desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   NAVBAR (DESKTOP ONLY)
+========================= */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  background: rgba(199, 234, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  font-size: 1.9rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  color: #111;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 10px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.menu-list a:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* =========================
+   CENTER WHITE BOX
+========================= */
+.center-box {
+  font-family: "Gabriela", serif;
+  position: relative; /* anchor for menu button */
+  background: white;
+  padding: 30px 40px 50px;
+  border-radius: 16px;
+  text-align: center;
+  width: 900px;
+  max-width: 80vw;
+}
+
+/* =========================
+   TITLE
+========================= */
+.title {
+  font-family: "Gabriela", serif;
+  font-style: italic;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  font-family: "Gabriela", serif;
+  margin-top: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* =========================
+   MOBILE MENU (INSIDE BOX)
+========================= */
+.mobile-menu {
+  display: none;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  z-index: 10;
+  display: none;
+
+  font-size: 26px;
+  padding: 10px 14px;
+
+  background: #dbc9e0f2;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Button when menu is open */
+.menu-btn.open {
+  border-radius: 12px 12px 0 0;
+}
+
+/* DROPDOWN LIST */
+.mobile-menu-list {
+  position: absolute;
+  top: 50px;
+  right: 16px;
+
+  z-index: 9;
+  display: none;
+
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+
+  background: #dbc9e0f2;
+  border-radius: 12px 0 12px 12px;
+  text-align: right;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu-list a {
+  display: block;
+  padding: 6px 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+}
+
+/* Open state */
+.mobile-menu-list.open {
+  display: block;
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 720px) {
+  body {
+    background-image: url("../imagesQuizGame/background_tablet.png");
+  }
+
+  .center-box {
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  /* Hide desktop navbar */
+  .nav {
+    display: none;
+  }
+
+  /* Show mobile menu */
+  .mobile-menu {
+    display: block;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+}
