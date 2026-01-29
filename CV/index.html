@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <title>Alina Skultecka | CV</title>
     <link rel="stylesheet" href="styleCV.css">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 
@@ -22,6 +28,22 @@
             <a href="#about">CV</a>
             <a href="#contact">Contact me</a>
             <a href="/QuizGame/index.html">Get to know me</a>
+            <a
+                href="https://www.linkedin.com/in/alina-skultecka/"
+                target="_blank"
+                aria-label="LinkedIn"
+                class="social-link"
+                >
+                <i class="fa-brands fa-linkedin"></i>
+            </a> 
+            <a
+                href="https://github.com/AlinaSkultecka"
+                target="_blank"
+                aria-label="GitHub"
+                class="social-link"
+                >
+                <i class="fa-brands fa-github"></i>
+            </a>       
         </div>
     </nav>
 
@@ -38,163 +60,187 @@
 
     <!-- PAGE 2 / DASHBOARD STYLE ABOUT -->
     <section id="about" class="page page-2">
-    <div class="layout">
+        <div class="layout">
 
-        <!-- LEFT SIDEBAR -->
-        <aside class="sidebar">
-        <div class="profile">
-            <img src="imagesCV/photo.jpg" alt="Alina photo" class="side-photo">
-            <h3>Alina Skultecka</h3>
-            <p class="muted">Junior Software Engineer<br>.NET Cloud Developer</p>
+            <!-- LEFT SIDEBAR -->
+            <aside class="sidebar">
+                <div class="profile">
+                    <img src="imagesCV/cv_photo.jpg" alt="Alina photo" class="side-photo" >
+                    <h3>Alina Skultecka</h3>
+                    <p class="muted">Junior Software Developer<br>.NET Cloud Developer</p>
+                </div>
+
+                <div class="side-block">
+                    <div class="side-row"><span class="muted">Residence</span><span>Sweden</span></div>
+                    <div class="side-row"><span class="muted">City</span><span>Gothenburg</span></div>
+                    <div class="side-row"><span class="muted">Age</span><span>28</span></div>
+                </div>
+
+                <div class="side-block">
+                    <h4>Skills</h4>
+
+                    <div class="bar">
+                    <div class="bar-top"><span>C# / .NET</span><span class="muted">85%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+                    </div>
+
+                    <div class="bar">
+                    <div class="bar-top"><span>SQL / EF Core</span><span class="muted">80%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+                    </div>
+
+                    <div class="bar">
+                    <div class="bar-top"><span>Python</span><span class="muted">70%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
+                    </div>
+
+                    <div class="bar">
+                    <div class="bar-top"><span>HTML / CSS / JS</span><span class="muted">60%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
+                    </div>
+
+                    <div class="bar">
+                    <div class="bar-top"><span>Azure</span><span class="muted">80%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- RIGHT CONTENT WRAPPER -->
+            <div class="right">
+                <!-- MAIN CONTENT -->
+                <main class="main">
+                    <header class="main-hero">
+                        <h2>About Me</h2>
+                        <p class="muted">
+                            .NET Cloud Developer with a background in epidemiology and data-driven research. Strong
+                            foundation in programming, cloud infrastructure and data analysis. Hands-on experience includes
+                            building console applications, working with databases, and creating clear, impactful data
+                            visualizations. First author of a peer-reviewed scientific publication in medical field.    
+                        </p>
+                    </header>
+
+                    <!-- STATS -->
+                    <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">2025</div>
+                        <div class="muted">Started studying .NET Cloud Development</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2024</div>
+                        <div class="muted">Parental leave <br> Published a scientific paper</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2023 - 2022</div>
+                        <div class="muted">Got a Master degree in Global Health</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2021 - 2020</div>
+                        <div class="muted">Worked as an epidemiologist</div>
+                    </div>
+                    </div>
+
+                    <div class="cards">
+                        <article class="card" data-modal="education">
+                            <h4>Education</h4>
+                            <p class="muted">IT-Högskolan – .NET Cloud Development (Current)</p>
+                            <p class="muted">University of Gothenburg – MSc Global Health</p>
+                            <p class="ClickMe">Click me to read more</p>
+                        </article>
+
+                        <article class="card" data-modal="experience">
+                            <h4>Experience</h4>
+                            <p class="muted">Epidemiologist – CDC Latvia</p>
+                            <p class="muted">Emergency response, contact tracing</p>
+                            <p class="ClickMe">Click me to read more</p>
+                        </article>
+
+                        <article class="card" data-modal="tools">
+                            <h4>Tools</h4>
+                            <p class="muted">GitHub, MongoDB, Power BI</p>
+                            <p class="ClickMe">Click me to read more</p>
+                        </article>
+                    </div>
+
+                    <div class="modal-overlay" id="modal">
+                        <div class="modal">
+                            <div class="modal-content"></div>
+                        </div>
+                    </div>
+
+                    <footer class="main-footer publication">
+                        <h4>Publication </h4>
+                        <p class="pub-details muted">
+                            Skultecka A, Nyberg F, Lissner L, Rosvall M, Thelle DS, Olin AC, Torén K, Björck L, 
+                            Rosengren A, Mehlig K. Comparison of associations between alcohol consumption and metabolic syndrome 
+                            according to three definitions: The Swedish INTERGENE study. Metabol Open. 2024 Jun 5;23:100292. 
+                            <a href="https://doi.org/10.1016/j.metop.2024.100292" target="_blank">
+                            DOI: 10.1016/j.metop.2024.100292</a>
+                        </p>
+                    </footer>
+                </main>
+            </div>
         </div>
-
-        <div class="side-block">
-            <div class="side-row"><span class="muted">Residence</span><span>Sweden</span></div>
-            <div class="side-row"><span class="muted">City</span><span>Gothenburg</span></div>
-            <div class="side-row"><span class="muted">Age</span><span>28</span></div>
-        </div>
-
-        <div class="side-block">
-            <h4>Skills</h4>
-
-            <div class="bar">
-            <div class="bar-top"><span>C# / .NET</span><span class="muted">85%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
-            </div>
-
-            <div class="bar">
-            <div class="bar-top"><span>SQL / EF Core</span><span class="muted">80%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
-            </div>
-
-            <div class="bar">
-            <div class="bar-top"><span>Python</span><span class="muted">75%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:75%"></div></div>
-            </div>
-
-            <div class="bar">
-            <div class="bar-top"><span>HTML / CSS</span><span class="muted">70%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
-            </div>
-
-            <div class="bar">
-            <div class="bar-top"><span>JavaScript</span><span class="muted">70%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:60%"></div></div>
-            </div>
-        </div>
-
-        <a class="side-btn" href="#contact">Contact me</a>
-        </aside>
-
-        <!-- RIGHT CONTENT WRAPPER -->
-        <div class="right">
-
-        <div class="art-wrap">
-            <div class="art-card">
-                <div class="art-overlay">
-                <h2>Discover my amazing art space</h2>
-                <p>Explore creativity, design, and inspiration</p>
-                <a href="#" class="art-btn">Explore now</a>
-                </div>
-            </div>
-
-            <img class="art-photo" src="imagesCV/photo2.png" alt="Photo">
-        </div>
-
-
-            <!-- MAIN CONTENT -->
-            <main class="main">
-                <header class="main-hero">
-                <h2>About Me</h2>
-                <p class="muted">
-                    .NET Cloud Developer with a background in epidemiology and data-driven research. Strong
-                    foundation in programming, and data analysis, with skills in C#, SQL, R, and Python. Hands-on
-                    experience includes building console applications, working with databases, and creating clear,
-                    impactful data visualizations. First author of a peer-reviewed scientific publication in medical field.
-                </p>
-                </header>
-
-                <!-- STATS -->
-                <div class="stats">
-                <div class="stat">
-                    <div class="stat-number">2025</div>
-                    <div class="muted">Started .NET Cloud Dev</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">C#</div>
-                    <div class="muted">Console + WPF</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">SQL</div>
-                    <div class="muted">EF Core + DB work</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">Python</div>
-                    <div class="muted">Pandas + data tools</div>
-                </div>
-                </div>
-
-                <!-- CARDS -->
-                <h3 class="section-title">Highlights</h3>
-                <div class="cards">
-                <article class="card">
-                    <h4>Education</h4>
-                    <p class="muted">IT-Högskolan – .NET Cloud Development (Current)</p>
-                    <p class="muted">MSc Global Health – University of Gothenburg</p>
-                </article>
-
-                <article class="card">
-                    <h4>Experience</h4>
-                    <p class="muted">Epidemiologist – Centre for Disease Prevention and Control of Latvia</p>
-                    <p class="muted">Contact tracing, emergency response, high-pressure work</p>
-                </article>
-
-                <article class="card">
-                    <h4>Tools</h4>
-                    <p class="muted">GitHub, MongoDB, Power BI, SPSS/Stata</p>
-                </article>
-                </div>
-
-                <a class="next-btn" href="#experience">Next ↓</a>
-            </main>
-
-            </div>
+    </section>
 
     <!-- PAGE 3 / CONTACT -->
     <section id="contact" class="page page-3">
-    <div class="contact-box">
+        <div class="contact-layout">
 
-        <h2>Contact Me</h2>
-        <p class="muted">Feel free to reach out — I’d love to connect!</p>
+            <!-- LEFT COLUMN -->
+            <aside class="contact-left">
+                <div class="contact-box">
+                    <h2>Contact Me</h2>
+                    <p class="muted">Feel free to reach out — I’d love to connect!</p>
 
-        <div class="contact-grid">
-        <div class="contact-item">
-            <span>Email</span>
-            <a href="mailto:alina.skultecka@gmail.com">alina.skultecka@gmail.com</a>
+                    <div class="contact-grid">
+                    <div class="contact-item">
+                        <span>Email</span>
+                        <a href="mailto:alina.skultecka@gmail.com">alina.skultecka@gmail.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/alina-skultecka/" target="_blank">LinkedIn</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>GitHub</span>
+                        <a href="https://github.com/AlinaSkultecka" target="_blank">GitHub</a>
+                    </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- RIGHT COLUMN -->
+            <div class="contact-right">
+
+            <!-- ROW 1 -->
+            <div class="statement-box">
+                <div class="art-card">
+                <h2 class="quote">
+                    I enjoy challenging myself with complex goals
+                    and growing through the process.
+                </h2>
+                </div>
+                <img class="art-photo" src="imagesCV/photo2.png" alt="Photo">
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="email-cta">
+                <h3>Want to work together?</h3>
+                <p class="muted">I’m always open to interesting conversations.</p>
+                <a href="mailto:alina.skultecka@gmail.com" class="email-btn">
+                Send me an email →
+                </a>
+            </div>
+
+            </div>
         </div>
-
-        <div class="contact-item">
-            <span>LinkedIn</span>
-            <a href="https://www.linkedin.com/in/alina-skultecka/" target="_blank">LinkedIn</a>
-        </div>
-
-        <div class="contact-item">
-            <span>GitHub</span>
-            <a href="https://github.com/AlinaSkultecka" target="_blank">GitHub</a>
-        </div>
-
-        <div class="contact-item">
-            <span>Location</span>
-            <p>Gothenburg, Sweden</p>
-        </div>
-        </div>
-
-    </div>
     </section>
-    <script src="script.js"></script>
-
 </body>
-
 </html>
+
+
 
 

@@ -108,14 +108,18 @@ body {
 @media (max-width: 720px) {
   .layout {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .avatar {
-    width: 250px;
+    width: 180px;
+    padding: 0%;
   }
 
   .speech-bubble {
     max-width: 100%;
+    font-size: 14px;
+    padding : 5px 14px;
   }
 
   .speech-bubble::before {
@@ -124,5 +128,23 @@ body {
 
   #quiz-list {
     justify-content: center;
+    padding: auto;
+    margin: auto;
+  }
+
+  #quiz-list button {
+    width: 150px;
+    height: 80px;
+    font-size: 14px;
+  }
+  
+  #quiz-header {
+    font-size: 14px;
+    margin: 5%;
+  }
+
+  #footer {
+    font-size: 14px;
+    margin: 10px;
   }
 }
