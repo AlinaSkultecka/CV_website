@@ -187,7 +187,7 @@ ul {
 /* ========== PUBLICATION SECTION ========== */
 .publication {
   display: block;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .pub-details {

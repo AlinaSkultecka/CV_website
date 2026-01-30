@@ -84,6 +84,7 @@ body {
     .answer-box {
     justify-content: center;
     padding: 0px;
+    height: 100px;
     }
 
 }
