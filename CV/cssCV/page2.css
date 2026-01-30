@@ -1,0 +1,210 @@
+/* ========== PAGE 2 (DASHBOARD STYLE) ========== */
+.page-2 {
+  padding: 70px 6%;
+  background: #fff6dc;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 25px;
+  align-items: stretch;
+}
+
+/* ========== SIDEBAR ========== */
+.sidebar {
+  position: relative;
+  border-radius: 18px;
+  padding: 22px;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.side-photo {
+  width: 110px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.muted {
+  opacity: 0.75;
+}
+
+.side-block {
+  margin-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.side-block h4 {
+  margin-top: 10px;
+}
+
+.side-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* ========== SKILL BARS ========== */
+.bar {
+  margin-top: 14px;
+}
+
+.bar-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.bar-track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #f4b740;
+}
+
+/* ========== MAIN CONTENT ========== */
+.main {
+  border-radius: 18px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.main-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+/* ========== STATS ========== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.stat {
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+.stat-number {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* ========== CARDS ========== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card h4 {
+  margin-bottom: 8px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Click hint inside cards */
+.ClickMe {
+  margin-top: auto;
+  font-size: 13px;
+  color: #9a9a9a;
+  opacity: 0.8;
+  text-align: right;
+  font-style: italic;
+  transition: opacity 0.2s ease;
+}
+
+.card:hover .ClickMe {
+  opacity: 1;
+}
+
+/* ========== MODAL ========== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 24px;
+  width: 90%;
+  max-width: 820px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: pop 0.25s ease;
+}
+
+ul {
+  padding-left: 32px; 
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+/* ========== PUBLICATION SECTION ========== */
+.publication {
+  display: block;
+  padding: 20px;
+}
+
+.pub-details {
+  padding: 10px 0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

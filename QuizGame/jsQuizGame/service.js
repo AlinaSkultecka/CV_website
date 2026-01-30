@@ -1,4 +1,4 @@
-import { quizzes } from "../data/quizzes.js";
+import { quizzes } from "../dataQuizGame/quizzes.js";
 
 // Save quizzes to localStorage
 const saveQuizzesToLocalStorage = () => {

@@ -1,0 +1,164 @@
+/* ========== RESET / BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #333;
+}
+
+/* ========== UTILITIES ========== */
+.muted {
+  opacity: 0.75;
+}
+
+/* ========== NAVBAR (DESKTOP) ========== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 10%;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(244, 183, 64, 0.9);
+}
+
+.nav-left {
+  font-size: 1.8rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  color: #111;
+}
+
+.nav-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.nav-right a:hover {
+  opacity: 0.7;
+}
+
+/* SOCIAL ICONS (DESKTOP) */
+.social-link {
+  margin-left: 16px;
+  font-size: 1.3rem;
+  color: #111;
+
+  display: inline-flex;
+  align-items: center;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.7;
+}
+
+/* ========== MOBILE MENU ========== */
+.menu-btn {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+
+  z-index: 1000;
+  display: none;
+
+  font-size: 20px;
+  padding: 7px 14px;
+
+  background: rgba(203, 138, 8, 0.95);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.menu-btn.open {
+  border-radius: 12px 12px 0 0;
+}
+
+.mobile-menu-list {
+  position: fixed;
+  top: 50px;
+  right: 16px;
+
+  z-index: 999;
+  display: none;
+
+  list-style: none;
+  padding: 12px;
+  margin: 0;
+
+  background: rgba(203, 138, 8, 0.95);
+  border-radius: 12px 0 12px 12px;
+  text-align: right;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu-list a {
+  display: block;
+  padding: 6px 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+}
+
+.mobile-menu-list.open {
+  display: block;
+}
+
+/* ========== BUTTONS ========== */
+.scroll-btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background 0.3s ease;
+
+  background: #111;
+  color: #fff;
+  padding: 12px 18px;
+}
+
+.scroll-btn:hover {
+  background: #333;
+}
+
+/* ========== FOOTER (GLOBAL) ========== */
+.site-footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ========== GLOBAL RESPONSIVE ========== */
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}

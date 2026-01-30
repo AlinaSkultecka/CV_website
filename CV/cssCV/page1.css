@@ -1,0 +1,48 @@
+/* ========== PAGE 1 – HERO ========== */
+
+.hero {
+  padding-top: 120px; /* offset for fixed navbar */
+  height: 100vh;
+  background: #f4b740;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 0 6%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-avatar {
+  width: 250px;
+  margin-bottom: 25px;
+}
+
+/* ========== RESPONSIVE – PAGE 1 ========== */
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero-avatar {
+    width: 200px;
+  }
+}
+
