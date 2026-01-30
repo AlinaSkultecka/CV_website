@@ -105,7 +105,7 @@ body {
 /* =========================
    INDEX RESPONSIVE
 ========================= */
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
   .layout {
     grid-template-columns: 1fr;
     gap: 10px;

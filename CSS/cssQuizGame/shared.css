@@ -4,7 +4,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: url("../imagesQuizGame/background_desktop.png");
+  background-image: url("/IMAGES/imagesQuizGame/background_desktop.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +26,6 @@ body {
 
   background: rgba(199, 234, 255, 0.85);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .nav-left {
@@ -196,9 +195,9 @@ body {
 /* =========================
    RESPONSIVE (MOBILE)
 ========================= */
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
   body {
-    background-image: url("../imagesQuizGame/background_tablet.png");
+    background-image: url("/IMAGES/imagesQuizGame/background_tablet.png");
   }
 
   .center-box {
