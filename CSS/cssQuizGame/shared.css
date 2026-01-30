@@ -4,7 +4,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: url("/IMAGES/imagesQuizGame/background_desktop.png");
+  background-image: url("IMAGES/imagesQuizGame/background_desktop.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,7 +197,7 @@ body {
 ========================= */
 @media (max-width: 1000px) {
   body {
-    background-image: url("/IMAGES/imagesQuizGame/background_tablet.png");
+    background-image: url("IMAGES/imagesQuizGame/background_tablet.png");
   }
 
   .center-box {
