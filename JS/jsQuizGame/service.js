@@ -1,3 +1,4 @@
+// Service module for managing quiz data in localStorage
 import { quizzes } from "../../DATA/dataQuizGame/quizzes.js";
 
 // Save quizzes to localStorage

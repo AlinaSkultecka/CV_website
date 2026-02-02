@@ -53,7 +53,6 @@ function showQuestion() {
 }
 
 
-
 // Handling answer click
 function handleAnswer(answer, clickedBox, answersGrid) {
   // prevent multiple clicks
@@ -80,6 +79,7 @@ function handleAnswer(answer, clickedBox, answersGrid) {
     });
   }
 
+  
   // move to next question after delay
   setTimeout(() => {
     currentQuestionIndex++;
@@ -91,7 +91,6 @@ function handleAnswer(answer, clickedBox, answersGrid) {
     }
   }, 1000);
 }
-
 
 
 // Show final result

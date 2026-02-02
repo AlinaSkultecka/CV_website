@@ -1,3 +1,4 @@
+// Navigation bar toggle for mobile view
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.querySelector(".menu-btn");
   const menu = document.querySelector(".mobile-menu-list");

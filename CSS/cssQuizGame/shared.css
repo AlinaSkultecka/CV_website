@@ -198,11 +198,17 @@ body {
 @media (max-width: 1000px) {
   body {
     background-image: url("../../IMAGES/imagesQuizGame/background_tablet.png");
+    background-size: cover;
+    background-position: center;
   }
 
   .center-box {
-    padding: 30px 20px;
-    width: 100%;
+    width: 85%;
+    max-width: 800px;
+    height: 1100px;
+    padding: 24px 18px;
+    margin: 20px auto;
+    border-radius: 20px;
   }
 
   /* Hide desktop navbar */
