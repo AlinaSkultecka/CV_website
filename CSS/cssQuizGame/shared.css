@@ -198,14 +198,13 @@ body {
 @media (max-width: 1000px) {
   body {
     background-image: url("../../IMAGES/imagesQuizGame/background_tablet.png");
-    background-size: cover;
-    background-position: center;
   }
 
   .center-box {
     width: 85%;
     max-width: 800px;
-    height: 1100px;
+    height: auto;         /* important */
+    min-height: 0;
     padding: 24px 18px;
     margin: 20px auto;
     border-radius: 20px;

@@ -2,7 +2,9 @@
    QUIZ PAGE
 ========================= */
 body {
-  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-box {
@@ -67,24 +69,28 @@ body {
    QUIZ RESPONSIVE
 ========================= */
 @media (max-width: 1000px) {
-    
-   .center-box {
-   margin: 13px auto 13px auto;
-   }
-    .title {
-    margin-top: 10px;
-    }
+  .body {
+  min-height: 100vh; 
+  }   
+  
+  .center-box {
+  margin: 13px auto 13px auto;
+  }
 
-    .answers-grid {
-    grid-template-columns: 1fr;
-    max-width: 250px;
-    margin: 0 auto;
-    }
+  .title {
+  margin-top: 10px;
+  }
 
-    .answer-box {
-    justify-content: center;
-    padding: 0px;
-    height: 90px;
-    }
+  .answers-grid {
+  grid-template-columns: 1fr;
+  max-width: 250px;
+  margin: 0 auto;
+  }
+
+  .answer-box {
+  justify-content: center;
+  padding: 0px;
+  height: 90px;
+  }
 
 }

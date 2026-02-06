@@ -140,6 +140,12 @@ body {
   background: #333;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ========== FOOTER (GLOBAL) ========== */
 .site-footer {
   text-align: center;

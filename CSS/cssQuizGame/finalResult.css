@@ -1,14 +1,16 @@
 body {
-  min-height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-box {
   margin: 80px auto 10px auto;
   height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* =========================

@@ -108,19 +108,19 @@ body {
 @media (max-width: 1000px) {
   .layout {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 10px;
     text-align: center;
   }
 
   .avatar {
-    width: 250px;
+    width: 200px;
     margin: 0 auto;
     padding: 0;
   }
 
   .speech-bubble {
     max-width: 100%;
-    font-size: 25px;
+    font-size: 16px;
     padding: 12px 16px;
     margin: 0 auto;
   }
@@ -133,25 +133,25 @@ body {
     font-size: 20px;
   }
 
-  #quiz-list {
+  #quiz-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 260px);
-    justify-content: center;
-    gap: 14px;
+    grid-template-columns: 1fr;      /* one per row */
+    gap: 12px;
     margin-top: 10px;
   }
 
-  #quiz-list button {
+  #quiz-list button{
     width: 100%;
-    max-width: 260px;
-    height: 56px;
-    font-size: 15px;
-    border-radius: 14px;
-    height: 100px;
-    width: 260px;
-    font-size: 20px;
+    max-width: 420px;               /* optional */
+    height: auto;                   /* key: no forced big height */
+    padding: 14px 16px;             /* controls button size */
+    min-height: 56px;               /* good tap target */
+    font-size: 16px;
+    line-height: 1.2;
+    white-space: normal;            /* allow wrap */
+    text-align: left;               /* feels nicer on mobile */
   }
-  
+
   #quiz-header {
     font-size: 16px;
     margin: 10px 0;
@@ -161,4 +161,10 @@ body {
     font-size: 13px;
     margin: 12px 0;
   }
+}
+
+@media (max-width: 600px){
+  .avatar{ width: 200px; }
+  .title{ font-size: 28px; }
+  .speech-bubble{ font-size: 16px; }
 }
