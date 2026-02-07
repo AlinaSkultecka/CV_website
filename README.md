@@ -8,7 +8,7 @@ https://alinaskultecka.github.io/CV_website/
 ### ✨ What’s inside?
 - **My CV** – education, skills, and experience in one place  
 - **Tech & projects** – what I work with and what I enjoy building  
-- **Responsive design** – works nicely on both desktop and mobile (in delopment)
+- **Responsive design** – works nicely on both desktop and mobile
 - A **“Get to know me” button**
 
 ### 🎲 Get to Know Me – Interactive Quiz (innitialy was part of the assignment)
