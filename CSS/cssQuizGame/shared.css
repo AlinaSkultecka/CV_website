@@ -198,6 +198,7 @@ body {
 @media (max-width: 1000px) {
   body {
     background-image: url("../../IMAGES/imagesQuizGame/background_tablet.png");
+    background-size: cover;
   }
 
   .center-box {
